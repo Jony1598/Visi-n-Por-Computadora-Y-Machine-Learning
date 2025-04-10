@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Reconocimiento de Dígitos</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Dibuja un número</h1>
+    <canvas id="canvas" width="280" height="280"></canvas>
+    <div class="buttons">
+        <button onclick="clearCanvas()">Borrar</button>
+        <button onclick="sendImage()">Predecir</button>
+    </div>
+    <h2 id="resultado">Resultado: </h2>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
